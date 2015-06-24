@@ -1,0 +1,17 @@
+name       : exfat-utils
+version    : 1.1.1
+release    : 1
+source     :
+    - https://doc-00-68-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/hl8lif0rpsned7tqopg0t25kh6febs72/1435118400000/11772781877916487120/*/0B7CLI-REKbE3UzNtSkRvdHBpdjQ?e=download : c64454083961fbad164fa7daef03d7e9247aa978c11395d62a265d48a1d56232
+license    : GPL-2.0
+summary    : exFAT file system utilities
+description: |
+    exFAT file system utilities
+builddeps  :
+    - scons
+install    : |
+    scons install DESTDIR=%installroot%/usr/bin
+    install -Dm444 dump/dumpexfat.8 %installroot%/usr/share/man/man8/dumpexfat.8
+    install -m444 fsck/exfatfsck.8 %installroot%/usr/share/man/man8
+    install -m444 mkfs/mkexfatfs.8 %installroot%/usr/share/man/man8
+    install -m444 label/exfatlabel.8 %installroot%/usr/share/man/man8
