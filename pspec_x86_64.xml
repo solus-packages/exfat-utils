@@ -6,6 +6,7 @@
             <Email>ikey@solus-project.com</Email>
         </Packager>
         <License>GPL-2.0</License>
+        <PartOf>system.utils</PartOf>
         <Summary xml:lang="en">exFAT file system utilities</Summary>
         <Description xml:lang="en">exFAT file system utilities
 </Description>
@@ -16,15 +17,15 @@
         <Summary xml:lang="en">exFAT file system utilities</Summary>
         <Description xml:lang="en">exFAT file system utilities
 </Description>
-        <PartOf>system.base</PartOf>
+        <PartOf>system.utils</PartOf>
         <Files>
             <Path fileType="executable">/usr/sbin</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2016-03-06</Date>
+        <Update release="6">
+            <Date>2016-04-12</Date>
             <Version>1.2.3</Version>
             <Comment>Packaging update</Comment>
             <Name>Ikey Doherty</Name>
