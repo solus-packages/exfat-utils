@@ -1,8 +1,8 @@
 name       : exfat-utils
-version    : 1.2.3
-release    : 6
+version    : 1.2.7
+release    : 7
 source     :
-    - https://github.com/relan/exfat/releases/download/v1.2.3/exfat-utils-1.2.3.tar.gz : 80d3b3f21242d60d36a38a4ddb05cb7cc3a7d4eef5793e8314814937b938fcea
+    - https://github.com/relan/exfat/releases/download/v1.2.7/exfat-utils-1.2.7.tar.gz : 386132d155b92c7d27735483663f2724844cb904ef9ecd83c374cffe831dffe4
 license    : GPL-2.0
 summary    : exFAT file system utilities
 description: |
