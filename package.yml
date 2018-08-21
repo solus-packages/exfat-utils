@@ -1,17 +1,19 @@
 name       : exfat-utils
-version    : 1.2.7
-release    : 7
+version    : 1.2.8
+release    : 8
 source     :
-    - https://github.com/relan/exfat/releases/download/v1.2.7/exfat-utils-1.2.7.tar.gz : 386132d155b92c7d27735483663f2724844cb904ef9ecd83c374cffe831dffe4
+    - https://github.com/relan/exfat/archive/v1.2.8.tar.gz : 778474bfbcd92e35bba5b88bd7ad3f6400328256636abb9031bfcc1ce15ed887
 license    : GPL-2.0
 summary    : exFAT file system utilities
 description: |
     exFAT file system utilities
 component  : system.utils
+builddeps  :
+    - pkgconfig(fuse)
 setup      : |
-    %configure --disable-static --bindir=/usr/bin --sbindir=/usr/sbin
+    %reconfigure --disable-static --bindir=/usr/bin --sbindir=/usr/sbin
 build      : |
-    %make 
+    %make
 install    : |
     %make_install
     install -D -m 00644 dump/dumpexfat.8 %installroot%/usr/share/man/man8/dumpexfat.8
