@@ -2,20 +2,20 @@
     <Source>
         <Name>exfat-utils</Name>
         <Packager>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPL-2.0-or-later</License>
         <PartOf>system.utils</PartOf>
         <Summary xml:lang="en">exFAT file system utilities</Summary>
-        <Description xml:lang="en">exFAT file system utilities
+        <Description xml:lang="en">Full-featured exFAT file system implementation for Unix-like systems. It consists of a FUSE module (fuse-exfat) and a set of utilities (exfat-utils).
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>exfat-utils</Name>
         <Summary xml:lang="en">exFAT file system utilities</Summary>
-        <Description xml:lang="en">exFAT file system utilities
+        <Description xml:lang="en">Full-featured exFAT file system implementation for Unix-like systems. It consists of a FUSE module (fuse-exfat) and a set of utilities (exfat-utils).
 </Description>
         <PartOf>system.utils</PartOf>
         <Files>
@@ -35,12 +35,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2018-08-21</Date>
-            <Version>1.2.8</Version>
+        <Update release="9">
+            <Date>2018-09-18</Date>
+            <Version>1.3.0</Version>
             <Comment>Packaging update</Comment>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
